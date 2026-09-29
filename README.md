@@ -560,7 +560,7 @@ motion-runner/
 
 ---
 
-# 🛠 Қолданылған технологиялар
+#  Қолданылған технологиялар
 
 ### Frontend
 
@@ -687,7 +687,7 @@ npm.cmd run preview
 
 ---
 
-# 🎬 Demo Flow
+#  Demo Flow
 
 Жобаның толық сценарийі:
 
@@ -718,7 +718,7 @@ Final Motion Report
 
 ---
 
-# 🎤 Hackathon Demo
+#  Hackathon Demo
 
 Жюри алдында демонстрацияны мына ретпен көрсетуге болады:
 
