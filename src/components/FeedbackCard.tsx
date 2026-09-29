@@ -1,20 +1,60 @@
-import type { MotionFeedback } from '../motion/types'
+import type {
+  MotionFeedback,
+} from '../motion/types'
 
-export default function FeedbackCard({ feedback }: { feedback: MotionFeedback }) {
-  const pct = Math.round(feedback.confidence * 100)
+export default function FeedbackCard({
+  feedback,
+}: {
+  feedback: MotionFeedback
+}) {
+  const pct =
+    Math.round(
+      feedback.confidence * 100,
+    )
+
   return (
-    <div className={`feedback-card quality-${feedback.quality}`}>
-      <div className="feedback-head">
-        <div>
-          <span className="eyebrow">SMART MOTION COACH</span>
-          <h3>{feedback.message}</h3>
+    <section
+      className={`coach-card quality-${feedback.quality}`}
+    >
+      <div className="coach-card-head">
+        <span>
+          AI COACH FEEDBACK
+        </span>
+
+        <strong>
+          {feedback.quality.toUpperCase()}
+        </strong>
+      </div>
+
+      <div className="coach-card-body">
+        <div className="coach-ring">
+          <strong>
+            {pct}%
+          </strong>
+
+          <span>
+            FORM
+          </span>
         </div>
-        <strong>{pct}%</strong>
+
+        <div className="coach-copy">
+          <span>
+            CURRENT POSTURE MOVE
+          </span>
+
+          <h3>
+            {feedback.message}
+          </h3>
+
+          <div className="coach-good">
+            ✓ Қимыл анықталды
+          </div>
+
+          <div className="coach-fix">
+            △ {feedback.detail}
+          </div>
+        </div>
       </div>
-      <div className="meter">
-        <div style={{ width: `${pct}%` }} />
-      </div>
-      <p>{feedback.detail}</p>
-    </div>
+    </section>
   )
 }
