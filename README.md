@@ -866,6 +866,6 @@ Motion Runner тек:
 
 ## Team
 
-**Motion Runner Team**
+**Queens**
 
 Built for **ADMIT Hackathon 2026**.
