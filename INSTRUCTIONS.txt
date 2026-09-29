@@ -1,0 +1,31 @@
+MOTION RUNNER — SMART GATES PATCH
+
+Бұл patch motion detection кодына тимейді.
+
+1. Қауіпсіз branch:
+   git switch -c feature/smart-gates
+
+2. Ауыстыр:
+   src/game/types.ts
+   src/game/engine.ts
+   src/components/GameView.tsx
+
+3. smart-gates.css ішін src/styles.css-тің ең соңына ҚОС.
+   styles.css-ті толық ауыстырма.
+
+4. Ctrl + S
+
+5. Іске қос:
+   npm.cmd run dev
+
+6. Тексер:
+   - кәдімгі obstacle жұмыс істейді
+   - кейде SMART GATE 90%+ шығады
+   - 90%+ confidence қимыл gate-ті өтеді
+   - +250 bonus
+   - miss болса combo 0 болады
+
+7. Дұрыс болса:
+   git add .
+   git commit -m "feat: add Smart Gates and motion quality challenges"
+   git push -u origin feature/smart-gates
